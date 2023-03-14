@@ -54,11 +54,15 @@ app.post("/posts", verifyToken, upload.single("picture"), createPost);
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
+app.get("/", async (req, res) => {
+  res.status(200).send({
+    message: "Hello from code-X",
+  });
+});
 
-/* Mongoos setup */
+/* Mongoose setup */
 
 const PORT = process.env.PORT || 6001;
-console.log(process.env.MONGO_URL);
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
