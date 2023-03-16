@@ -1,6 +1,6 @@
 # Soc-In
 A Full MERN STACK social media application using (ReactJs, NodeJs, MaterialUi)..
-
+```
 git clone by copying the url and pasting it in terminal : git clone https://github.com/vishnu1777/Soc-In
 
 in Server repo :
@@ -15,5 +15,6 @@ To deploy your customized repo :
 Go to render.com and deploy the server folder 
 
 Deploy the front end on vercel.com or netlify
+```
 
 Happy Coding :)
